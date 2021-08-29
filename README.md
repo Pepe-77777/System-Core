@@ -4,6 +4,6 @@
 PlaceholderAPI
 
 - Comandos:
-/raio
-/uptime
+/raio,
+/uptime,
 /plugininfo
