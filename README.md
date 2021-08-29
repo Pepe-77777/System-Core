@@ -16,4 +16,5 @@ GPU: Radeon RX 550/550 SERIES
 - Comandos:
 /raio,
 /uptime,
-/plugininfo
+/plugininfo,
+/systemcore
