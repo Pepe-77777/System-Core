@@ -7,8 +7,8 @@ PlaceholderAPI
 Spigot/Bukkit/PaperSpigot
 
 - Server testado:
-CPU: AMD Ryzem 3 3300x 4-Core Processor
-RAM: 512M (para o server) (16GB pro pc)
+CPU: AMD Ryzem 3 3300x 4-Core Processor,
+RAM: 512M (para o server) (16GB pro pc),
 GPU: Radeon RX 550/550 SERIES
 
 - Comandos:
