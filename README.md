@@ -1,6 +1,6 @@
 # System Core
 
-- [Clique aqui para fazer o download](https://www.mediafire.com/file/52lflrt54yh9nl9/SystemCore.jar/file)
+- [Clique aqui para fazer o download](https://www.mediafire.com/file/fv2d8hx73kpsj8o/SystemCore.jar/file)
 
 - Dependencias:
 PlaceholderAPI
