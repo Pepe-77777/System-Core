@@ -7,6 +7,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 import br.com.pepe.SystemCore.events.Events;
 import br.com.pepe.SystemCore.executor.SystemCoreE;
 import br.com.pepe.SystemCore.executor.UptimeE;
+import br.com.pepe.SystemCore.executor.PingE;
 import br.com.pepe.SystemCore.executor.PluginInfoE;
 import br.com.pepe.SystemCore.executor.RaioE;
 import net.md_5.bungee.api.ChatColor;
@@ -41,6 +42,7 @@ public class Main extends JavaPlugin {
 		getCommand("PluginInfo").setExecutor(new PluginInfoE());
 		getCommand("Raio").setExecutor(new RaioE());
 		getCommand("Uptime").setExecutor(new UptimeE());
+		getCommand("Ping").setExecutor(new PingE());
 	}
 	
 	public String getPrefix() {

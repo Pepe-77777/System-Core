@@ -10,3 +10,5 @@ commands:
       aliases: [cairraio, trovao]
    Uptime:
       aliases: [up, time]
+   Ping:
+      aliases: [getping, qualemeuping, playerping]
