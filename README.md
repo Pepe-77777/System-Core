@@ -1,6 +1,6 @@
 # System Core
 
-- [Clique aqui para fazer o download](https://www.mediafire.com/file/fv2d8hx73kpsj8o/SystemCore.jar/file)
+- [Clique aqui para fazer o download](https://www.spigotmc.org/resources/system-core.95848/)
 
 - Dependencias:
 PlaceholderAPI
