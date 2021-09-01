@@ -18,4 +18,5 @@ GPU: Radeon RX 550/550 SERIES
 /uptime,
 /plugininfo,
 /systemcore,
-/ping
+/ping,
+/tickspeed
