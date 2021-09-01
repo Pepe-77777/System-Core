@@ -12,6 +12,7 @@ public class SystemCore {
 		p.sendMessage(ChatColor.RED + "" + ChatColor.BOLD + "/raio " + ChatColor.RESET + "" + ChatColor.GOLD + "Faça um raio cair na sua cabeçá. [requer a permissão SystemCore.raio]");
 		p.sendMessage(ChatColor.RED + "" + ChatColor.BOLD + "/plugininfo " + ChatColor.RESET + "" + ChatColor.GOLD + "Vejá as informações do server.");
 		p.sendMessage(ChatColor.RED + "" + ChatColor.BOLD + "/ping " + ChatColor.RESET + "" + ChatColor.GOLD + "Vejá o seu PING.");
+		p.sendMessage(ChatColor.RED + "" + ChatColor.BOLD + "/tickspeed " + ChatColor.RESET + "" + ChatColor.GOLD + "Mude o randomTickSpeed.");
 		p.sendMessage(ChatColor.GRAY +""+ ChatColor.ITALIC + "Plugin criado por " + ChatColor.BOLD + "" + ChatColor.RED +""+ ChatColor.ITALIC + "Pepe_Java" + ChatColor.GRAY +""+ ChatColor.ITALIC + ", Pessoas que ajudaram a criar: "+ChatColor.RED+""+ChatColor.ITALIC+"zZHenrique_, e_obraia");
 	}
 	
