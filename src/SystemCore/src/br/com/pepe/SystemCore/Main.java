@@ -6,6 +6,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import br.com.pepe.SystemCore.events.Events;
 import br.com.pepe.SystemCore.executor.SystemCoreE;
+import br.com.pepe.SystemCore.executor.TickSpeedE;
 import br.com.pepe.SystemCore.executor.UptimeE;
 import br.com.pepe.SystemCore.executor.PingE;
 import br.com.pepe.SystemCore.executor.PluginInfoE;
@@ -43,6 +44,7 @@ public class Main extends JavaPlugin {
 		getCommand("Raio").setExecutor(new RaioE());
 		getCommand("Uptime").setExecutor(new UptimeE());
 		getCommand("Ping").setExecutor(new PingE());
+		getCommand("TickSpeed").setExecutor(new TickSpeedE());
 	}
 	
 	public String getPrefix() {
