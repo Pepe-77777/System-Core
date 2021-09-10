@@ -25,8 +25,10 @@ public class Main extends JavaPlugin {
 		Bukkit.getConsoleSender().sendMessage(prefix + ChatColor.DARK_GRAY + "Plugin iniciado.");
 		plugin = this;
 		
-		config.options().header("A permissão para usar o comando /raio padrão SystemCore.raio");
         config.addDefault("raio-p", "SystemCore.raio");
+        config.options().copyDefaults(true);
+        
+        config.addDefault("tickspeed-p", "SystemCore.TickSpeed");
         config.options().copyDefaults(true);
         
         saveConfig();

@@ -25,7 +25,7 @@ public class TickSpeedE implements CommandExecutor {
 	
 	public static void tickspeed (Player p, String[] args) {
 		
-		if(!p.hasPermission("SystemCore.changetickspeed") || !p.hasPermission("minecraft.command.gamerule")) {
+		if(!p.hasPermission(Main.plugin.getConfig().getString("tickspeed-p"))) {
 			
 			p.sendMessage(Main.plugin.getPrefix() + ChatColor.GOLD + "Você não tem permissão.");
 			
