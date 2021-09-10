@@ -9,7 +9,7 @@ public class Events implements Listener {
 	
 	@EventHandler
 	public void aoEntrar(PlayerJoinEvent e) {
-		e.setJoinMessage(null);
+		e.setJoinMessage(null);	
 	}
 	
 	@EventHandler

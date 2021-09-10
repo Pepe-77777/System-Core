@@ -1,6 +1,7 @@
 package br.com.pepe.SystemCore;
 
 import org.bukkit.Bukkit;
+import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -15,6 +16,7 @@ import net.md_5.bungee.api.ChatColor;
 
 public class Main extends JavaPlugin {
 	
+    FileConfiguration config = getConfig();
 	public static Main plugin;
 	public String prefix = ChatColor.AQUA + "" + ChatColor.BOLD + "System Core" + ChatColor.GRAY + ChatColor.BOLD + " -> " + ChatColor.RESET;
 	
@@ -23,10 +25,17 @@ public class Main extends JavaPlugin {
 		Bukkit.getConsoleSender().sendMessage(prefix + ChatColor.DARK_GRAY + "Plugin iniciado.");
 		plugin = this;
 		
+		config.options().header("A permissão para usar o comando /raio padrão SystemCore.raio");
+        config.addDefault("raio-p", "SystemCore.raio");
+        config.options().copyDefaults(true);
+        
+        saveConfig();
+		
 		registerEvents();
 		registerCommands();
 	}
-	
+   
+
 	@Override
 	public void onDisable() {
 		Bukkit.getConsoleSender().sendMessage(prefix + ChatColor.DARK_GRAY + "Plugin desligado.");

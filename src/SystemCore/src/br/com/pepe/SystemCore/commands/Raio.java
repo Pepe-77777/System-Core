@@ -6,11 +6,11 @@ import org.bukkit.entity.Player;
 import br.com.pepe.SystemCore.Main;
 import net.md_5.bungee.api.ChatColor;
 
-
 public class Raio {
 
-	public static void raio (Player p) {
-		if(p.hasPermission("SystemCore.raio")) {
+    public static void raio (Player p) {
+  
+		if(p.hasPermission(Main.plugin.getConfig().getString("raio-p"))) {
 		Bukkit.getServer().dispatchCommand(Bukkit.getServer().getConsoleSender(), "execute " + p.getName() + " ~ ~ ~ /summon LightningBolt");
 		p.sendMessage(Main.plugin.getPrefix() + ChatColor.GOLD + "Você spawnou o " + ChatColor.RED + "RAIO" + ChatColor.GOLD + "!");
 		} else {
