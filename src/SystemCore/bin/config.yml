@@ -1,2 +1,4 @@
-raio-p: SystemCore.raio
-tickspeed-p: SystemCore.TickSpeed
+raio-permission: SystemCore.Raio
+tickspeed-permission: SystemCore.TickSpeed
+fly-permission: SystemCore.Fly
+fly-world: Lobby

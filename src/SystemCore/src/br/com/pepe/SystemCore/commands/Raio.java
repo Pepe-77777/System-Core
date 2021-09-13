@@ -10,7 +10,7 @@ public class Raio {
 
     public static void raio (Player p) {
   
-		if(p.hasPermission(Main.plugin.getConfig().getString("raio-p"))) {
+		if(p.hasPermission(Main.plugin.getConfig().getString("raio-permission"))) {
 		Bukkit.getServer().dispatchCommand(Bukkit.getServer().getConsoleSender(), "execute " + p.getName() + " ~ ~ ~ /summon LightningBolt");
 		p.sendMessage(Main.plugin.getPrefix() + ChatColor.GOLD + "Você spawnou o " + ChatColor.RED + "RAIO" + ChatColor.GOLD + "!");
 		} else {

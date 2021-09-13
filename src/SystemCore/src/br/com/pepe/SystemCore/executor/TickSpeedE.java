@@ -25,7 +25,7 @@ public class TickSpeedE implements CommandExecutor {
 	
 	public static void tickspeed (Player p, String[] args) {
 		
-		if(!p.hasPermission(Main.plugin.getConfig().getString("tickspeed-p"))) {
+		if(!p.hasPermission(Main.plugin.getConfig().getString("tickspeed-permission"))) {
 			
 			p.sendMessage(Main.plugin.getPrefix() + ChatColor.GOLD + "Você não tem permissão.");
 			

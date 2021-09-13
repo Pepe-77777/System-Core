@@ -1,5 +1,5 @@
 main: br.com.pepe.SystemCore.Main
-version: 1.4
+version: 1.5
 name: SystemCore
 commands:
    SystemCore:
@@ -14,3 +14,5 @@ commands:
       aliases: [getping, qualemeuping, playerping]
    TickSpeed:
       aliases: [changetick, changetickspeed, tick, speed, randomtick, randomtickspeed]
+   Fly:
+      aliases: [voar, ligarfly, desligarfly]
