@@ -22,5 +22,7 @@ GPU: Radeon RX 550/550 SERIES<br>
 /tickspeed<br>
 
 - Config.yml:<br>
-raio-p: SystemCore.raio<br>
-tickspeed-p: SystemCore.TickSpeed
+raio-permission: SystemCore.raio<br>
+tickspeed-permission: SystemCore.TickSpeed<br>
+fly-permission: SystemCore.Fly<br>
+fly-world: Lobby
