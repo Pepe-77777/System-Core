@@ -19,7 +19,8 @@ GPU: Radeon RX 550/550 SERIES<br>
 /plugininfo,<br>
 /systemcore,<br>
 /ping,<br>
-/tickspeed<br>
+/tickspeed,<br>
+/fly<br>
 
 - Config.yml:<br>
 raio-permission: SystemCore.raio<br>
