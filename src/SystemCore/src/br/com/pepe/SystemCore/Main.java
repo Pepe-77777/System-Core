@@ -6,13 +6,7 @@ import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import br.com.pepe.SystemCore.events.Events;
-import br.com.pepe.SystemCore.executor.SystemCoreE;
-import br.com.pepe.SystemCore.executor.TickSpeedE;
-import br.com.pepe.SystemCore.executor.UptimeE;
-import br.com.pepe.SystemCore.executor.FlyE;
-import br.com.pepe.SystemCore.executor.PingE;
-import br.com.pepe.SystemCore.executor.PluginInfoE;
-import br.com.pepe.SystemCore.executor.RaioE;
+import br.com.pepe.SystemCore.executor.*;
 import net.md_5.bungee.api.ChatColor;
 
 public class Main extends JavaPlugin {
@@ -39,11 +33,11 @@ public class Main extends JavaPlugin {
         
         config.addDefault("fly-world", "Lobby");
         config.options().copyDefaults(true);
+        
+        config.addDefault("ban-permission", "SystemCore.Ban");
+        config.options().copyDefaults(true);
        
         saveConfig();
-        
-        toggled = false;
-        toggled2 = false;
         
 		registerEvents();
 		registerCommands();
@@ -69,6 +63,8 @@ public class Main extends JavaPlugin {
 		getCommand("Ping").setExecutor(new PingE());
 		getCommand("TickSpeed").setExecutor(new TickSpeedE());
 		getCommand("Fly").setExecutor(new FlyE());
+		getCommand("Ban").setExecutor(new BanE());
+		getCommand("Unban").setExecutor(new UnbanE());
 	}
 	
 	public String getPrefix() {

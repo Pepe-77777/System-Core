@@ -16,3 +16,7 @@ commands:
       aliases: [changetick, changetickspeed, tick, speed, randomtick, randomtickspeed]
    Fly:
       aliases: [voar, ligarfly, desligarfly]
+   Ban:
+      aliases: [banir, banirplayer, playerban]
+   Unban:
+      aliases: [desbanir, desbanirplayer, unbanplayer]

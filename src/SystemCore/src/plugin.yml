@@ -1,5 +1,5 @@
 main: br.com.pepe.SystemCore.Main
-version: 1.5
+version: 1.7.1
 name: SystemCore
 commands:
    SystemCore:
@@ -16,3 +16,7 @@ commands:
       aliases: [changetick, changetickspeed, tick, speed, randomtick, randomtickspeed]
    Fly:
       aliases: [voar, ligarfly, desligarfly]
+   Ban:
+      aliases: [banir, banirplayer, playerban]
+   Unban:
+      aliases: [desbanir, desbanirplayer, unbanplayer]
