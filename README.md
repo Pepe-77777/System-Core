@@ -27,3 +27,4 @@ raio-permission: SystemCore.raio<br>
 tickspeed-permission: SystemCore.TickSpeed<br>
 fly-permission: SystemCore.Fly<br>
 fly-world: Lobby
+ban-permission: SystemCore.Ban
