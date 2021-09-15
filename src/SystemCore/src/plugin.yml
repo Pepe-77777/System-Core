@@ -1,5 +1,5 @@
 main: br.com.pepe.SystemCore.Main
-version: 1.7.1
+version: 1.7.2
 name: SystemCore
 commands:
    SystemCore:
@@ -20,3 +20,7 @@ commands:
       aliases: [banir, banirplayer, playerban]
    Unban:
       aliases: [desbanir, desbanirplayer, unbanplayer]
+   SS:
+      aliases: [jaula, tela, vertela]
+   setSS:
+      aliases: [setarjaula, setarss, setartela]

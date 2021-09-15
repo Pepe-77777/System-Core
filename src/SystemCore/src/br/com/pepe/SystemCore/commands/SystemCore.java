@@ -16,6 +16,8 @@ public class SystemCore {
 		p.sendMessage(ChatColor.RED + "" + ChatColor.BOLD + "/ban [player] [motivo] " + ChatColor.RESET + "" + ChatColor.GOLD + "Dê ban em uma pessoa.");
 		p.sendMessage(ChatColor.RED + "" + ChatColor.BOLD + "/unban [player] " + ChatColor.RESET + "" + ChatColor.GOLD + "Dê unban em uma pessoa.");
 		p.sendMessage(ChatColor.RED + "" + ChatColor.BOLD + "/fly " + ChatColor.RESET + "" + ChatColor.GOLD + "Ative/Desligue o FLY.");
+		p.sendMessage(ChatColor.RED + "" + ChatColor.BOLD + "/setSS " + ChatColor.RESET + "" + ChatColor.GOLD + "Sete as cordenadas do SS.");
+		p.sendMessage(ChatColor.RED + "" + ChatColor.BOLD + "/SS [player] " + ChatColor.RESET + "" + ChatColor.GOLD + "Mande um player para SS.");
 		p.sendMessage(ChatColor.GRAY +""+ ChatColor.ITALIC + "Plugin criado por " + ChatColor.BOLD + "" + ChatColor.RED +""+ ChatColor.ITALIC + "Pepe_Java" + ChatColor.GRAY +""+ ChatColor.ITALIC + ", Pessoas que ajudaram a criar: "+ChatColor.RED+""+ChatColor.ITALIC+"zZHenrique_, e_obraia");
 	}
 	

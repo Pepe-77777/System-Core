@@ -18,13 +18,11 @@ public class Unban {
 			// Se não (se tiver a permissão)
 		} else {
 			// Verificar se ele botou um player com mais de 3 caracteres
-			if (args.length <= 3) {
+			if (args.length == 0) {
 				p.sendMessage(Main.plugin.getPrefix() + ChatColor.GOLD + "Você precisa botar um nick valido!");
-			}
-			
-			if (args[0].length() >= 3) {
+			} else {
 				// Desbanir
-				Bukkit.broadcastMessage(ChatColor.AQUA + "O player " + ChatColor.RED + Bukkit.getPlayer(args[0]).getName() + ChatColor.AQUA + " Foi desbanido!");
+				Bukkit.broadcastMessage(ChatColor.AQUA + "O player " + ChatColor.RED + args[0] + ChatColor.AQUA + " Foi desbanido!");
 				Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "minecraft:pardon " + args[0]);
 			}
 			

@@ -3,3 +3,5 @@ tickspeed-permission: SystemCore.TickSpeed
 fly-permission: SystemCore.Fly
 fly-world: Lobby
 ban-permission: SystemCore.Ban
+ss-permission: SystemCore.SS
+ss-position: 0 0 0

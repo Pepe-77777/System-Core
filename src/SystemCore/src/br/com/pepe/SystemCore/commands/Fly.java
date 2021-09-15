@@ -22,24 +22,24 @@ public class Fly {
 				p.setAllowFlight(! p.getAllowFlight());
 				p.setFlying(p.getAllowFlight());
 				
-				if(p.getAllowFlight()) {
-					p.sendMessage(Main.plugin.getPrefix() + ChatColor.GREEN + "FLY Ativado.");
-				} else {
-					p.sendMessage(Main.plugin.getPrefix() + ChatColor.DARK_RED + "FLY Desativado.");
-				}
+				IFfly(p);
 			}
 		
 			} else {
 				p.setAllowFlight(! p.getAllowFlight());
 				p.setFlying(p.getAllowFlight());
 				
-				if(p.getAllowFlight()) {
-					p.sendMessage(Main.plugin.getPrefix() + ChatColor.GREEN + "FLY Ativado.");
-				} else {
-					p.sendMessage(Main.plugin.getPrefix() + ChatColor.DARK_RED + "FLY Desativado.");
-			}
+				IFfly(p);
 		}
 		
+	}
+	
+	public static void IFfly(Player p) {
+		if(p.getAllowFlight()) {
+			p.sendMessage(Main.plugin.getPrefix() + ChatColor.GREEN + "FLY Ativado.");
+		} else {
+			p.sendMessage(Main.plugin.getPrefix() + ChatColor.DARK_RED + "FLY Desativado.");
+		}
 	}
 		
 }

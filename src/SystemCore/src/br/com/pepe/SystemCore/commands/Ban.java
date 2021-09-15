@@ -18,14 +18,12 @@ public class Ban {
 			// Se não (se tiver a permissão)
 		} else {
 			// Verificar se ele botou um player com mais de 3 caracteres
-			if (args.length <= 3) {
+			if (args.length == 0) {
 				p.sendMessage(Main.plugin.getPrefix() + ChatColor.GOLD + "Você precisa botar um nick valido!");
-			}
-			
-			if (args[0].length() >= 3 & args[1] != null) {
+			} else {
 				// Banir
-				Bukkit.broadcastMessage(ChatColor.AQUA + "O player " + ChatColor.RED + Bukkit.getPlayer(args[0]).getName() + ChatColor.AQUA + " Foi banido!");
-				Bukkit.getPlayer(args[0]).kickPlayer(ChatColor.RED + "Você foi banido permanentemente!\nMotivo: " + args[1]);
+				Bukkit.broadcastMessage(ChatColor.AQUA + "O player " + ChatColor.RED + Bukkit.getPlayerExact(args[0]).getName() + ChatColor.AQUA + " Foi banido!");
+				Bukkit.getPlayerExact(args[0]).kickPlayer(ChatColor.RED + "Você foi banido permanentemente!\nMotivo: " + args[1]);
 				Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "minecraft:ban " + args[0] + " " + ChatColor.RED + args[1]);
 			}
 			

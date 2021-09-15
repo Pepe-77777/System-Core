@@ -14,7 +14,7 @@ public class Main extends JavaPlugin {
     FileConfiguration config = getConfig();
 	public static Main plugin;
 	public String prefix = ChatColor.AQUA + "" + ChatColor.BOLD + "System Core" + ChatColor.GRAY + ChatColor.BOLD + " -> " + ChatColor.RESET;
-	public boolean toggled;
+	public String SS;
 	public boolean toggled2;
 	
 	@Override
@@ -35,6 +35,9 @@ public class Main extends JavaPlugin {
         config.options().copyDefaults(true);
         
         config.addDefault("ban-permission", "SystemCore.Ban");
+        config.options().copyDefaults(true);
+        
+        config.addDefault("ss-permission", "SystemCore.SS");
         config.options().copyDefaults(true);
        
         saveConfig();
@@ -65,18 +68,25 @@ public class Main extends JavaPlugin {
 		getCommand("Fly").setExecutor(new FlyE());
 		getCommand("Ban").setExecutor(new BanE());
 		getCommand("Unban").setExecutor(new UnbanE());
+		getCommand("SS").setExecutor(new SSE());
+		getCommand("setSS").setExecutor(new SetSSE());
 	}
 	
 	public String getPrefix() {
 		return prefix;
 	}
 	
-	public Boolean getToggled() {
-		return toggled;
+	public String getSS() {
+		return SS;
 	}
 	
-	public void setToggled(Boolean a) {
-		toggled = a;
+	public void setSS(String a) {
+		SS = a;
+		
+        config.addDefault("ss-position", SS);
+        config.options().copyDefaults(true);
+        
+        saveConfig();
 	}
 	
 	public void set2Toggled(Boolean a) {
