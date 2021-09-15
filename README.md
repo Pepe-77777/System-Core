@@ -20,11 +20,14 @@ GPU: Radeon RX 550/550 SERIES<br>
 /systemcore,<br>
 /ping,<br>
 /tickspeed,<br>
-/fly<br>
+/fly,<br>
+/ss,<br>
+/setss<br>
 
 - Config.yml:<br>
-raio-permission: SystemCore.raio<br>
+raio-permission: SystemCore.Raio<br>
 tickspeed-permission: SystemCore.TickSpeed<br>
 fly-permission: SystemCore.Fly<br>
-fly-world: Lobby<br>
-ban-permission: SystemCore.Ban
+fly-world: lobby<br>
+ban-permission: SystemCore.Ban<br>
+ss-permission: SystemCore.SS<br>
