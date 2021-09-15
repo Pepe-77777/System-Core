@@ -1,5 +1,5 @@
 main: br.com.pepe.SystemCore.Main
-version: 1.5
+version: 1.7.1
 name: SystemCore
 commands:
    SystemCore:
